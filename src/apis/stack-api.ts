@@ -1,11 +1,12 @@
 import axios from 'axios';
-import cheerio from 'cheerio';
+import { load } from 'cheerio';
+import { DateTime } from 'luxon';
 
 type HerokuResponseObject = {
   stack: Object;
-  baseTech: string;
-  avalSince: string | null;
-  supportThrough: string | null;
+  baseTech: String;
+  avalSince: Object;
+  supportThrough: Object | null;
   status: Object;
 };
 
@@ -14,7 +15,7 @@ async function StackAPI(): Promise<Object | string> {
     const res: string = await axios
       .get('https://devcenter.heroku.com/articles/stack')
       .then((res) => res.data);
-    const $ = cheerio.load(res);
+    const $ = load(res);
 
     const result: HerokuResponseObject[] = [];
 
@@ -43,21 +44,33 @@ async function StackAPI(): Promise<Object | string> {
 
         const stackObj: HerokuResponseObject = {
           stack: { name: stackName, url: stackURL },
-          baseTech,
-          avalSince,
-          supportThrough,
+          baseTech: baseTech,
+          avalSince: {
+            text: avalSince,
+            date:
+              avalSince != null
+                ? DateTime.fromFormat(avalSince, 'yyyy').toString()
+                : null
+          },
+          supportThrough: {
+            text: supportThrough,
+            date:
+              supportThrough != null
+                ? DateTime.fromFormat(supportThrough, 'LLLL yyyy').toString()
+                : null
+          },
           status: { text: statusText, url: statusURL }
         };
         result.push(stackObj);
       });
 
-    return { success: true, data: result };
+    return { success: true, last_updated: DateTime.now(), data: result };
   } catch (e: any) {
-    return {
+    throw JSON.stringify({
       success: false,
       message: 'There was an error fetching stack api',
       error: e.toString()
-    };
+    });
   }
 }
 

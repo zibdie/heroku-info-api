@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/zibdie/heroku-stack-api#readme",
   "devDependencies": {
+    "@types/luxon": "^3.0.0",
     "@types/node": "^18.0.6",
     "eslint": "^8.20.0",
     "nodemon": "^2.0.19",
