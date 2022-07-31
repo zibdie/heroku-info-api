@@ -1,4 +1,4 @@
-import fs from 'fs/promises';
+import fs from 'fs';
 import path from 'path';
 const __dirname = path.resolve();
 
@@ -11,8 +11,10 @@ try {
     'heroku-stack-api.json'
   );
 
-  await fs.writeFile(herokuStackAPIPath, JSON.stringify(await StackAPI()));
+  if (!fs.existsSync(path.resolve(__dirname, 'api'))) {
+    fs.mkdirSync(path.resolve(__dirname, 'api'), { recursive: true });
+  }
+  await fs.writeFileSync(herokuStackAPIPath, JSON.stringify(await StackAPI()));
 } catch (e) {
-  console.error(`There was an error running the script: ${e}`);
-  process.exit(1);
+  throw `There was an error running the script: ${e}`;
 }
