@@ -1,0 +1,74 @@
+{
+  "success": true,
+  "last_updated": "2022-07-31T23:03:35.360+00:00",
+  "data": [
+    {
+      "stack": {
+        "name": "Heroku-22",
+        "url": "https://devcenter.heroku.com/articles/heroku-22-stack"
+      },
+      "baseTech": "Ubuntu 22.04",
+      "avalSince": { "text": "2022", "date": "2022-01-01T00:00:00.000+00:00" },
+      "supportThrough": {
+        "text": "April 2027",
+        "date": "2027-04-01T00:00:00.000+00:00"
+      },
+      "status": { "text": "Supported", "url": null }
+    },
+    {
+      "stack": {
+        "name": "Heroku-20",
+        "url": "https://devcenter.heroku.com/articles/heroku-20-stack"
+      },
+      "baseTech": "Ubuntu 20.04",
+      "avalSince": { "text": "2020", "date": "2020-01-01T00:00:00.000+00:00" },
+      "supportThrough": {
+        "text": "April 2025",
+        "date": "2025-04-01T00:00:00.000+00:00"
+      },
+      "status": { "text": "Default stack", "url": null }
+    },
+    {
+      "stack": {
+        "name": "Heroku-18",
+        "url": "https://devcenter.heroku.com/articles/heroku-18-stack"
+      },
+      "baseTech": "Ubuntu 18.04",
+      "avalSince": { "text": "2018", "date": "2018-01-01T00:00:00.000+00:00" },
+      "supportThrough": {
+        "text": "April 2023",
+        "date": "2023-04-01T00:00:00.000+00:00"
+      },
+      "status": {
+        "text": "Deprecated",
+        "url": "https://devcenter.heroku.com/changelog-items/2432"
+      }
+    },
+    {
+      "stack": {
+        "name": "Heroku-16",
+        "url": "https://devcenter.heroku.com/articles/heroku-16-stack"
+      },
+      "baseTech": "Ubuntu 16.04",
+      "avalSince": { "text": "2017", "date": "2017-01-01T00:00:00.000+00:00" },
+      "supportThrough": {
+        "text": "April 2021",
+        "date": "2021-04-01T00:00:00.000+00:00"
+      },
+      "status": {
+        "text": "End-of-life",
+        "url": "https://devcenter.heroku.com/changelog-items/2139"
+      }
+    },
+    {
+      "stack": {
+        "name": "Container",
+        "url": "https://devcenter.heroku.com/categories/deploying-with-docker"
+      },
+      "baseTech": "Docker",
+      "avalSince": { "text": "2017", "date": "2017-01-01T00:00:00.000+00:00" },
+      "supportThrough": { "text": null, "date": null },
+      "status": { "text": null, "url": null }
+    }
+  ]
+}
