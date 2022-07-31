@@ -1,0 +1,28 @@
+name: Update API
+
+on:
+  push:
+    branches:
+      - main
+    paths-ignore:
+      - 'api/**'
+  schedule:
+    - cron: '0 0 * * 0'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v2
+      - name: Install Dependancies And Run Build
+        run: |
+          npm install
+          npm run build
+      - name: Push Results
+        run: |
+          git add --force ./api/**
+          git config user.name "GitHub Actions Bot"
+          git config user.email "<>"
+          git commit -m "Push Auto"
+          git push -u origin main
