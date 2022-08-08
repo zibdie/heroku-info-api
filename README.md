@@ -7,3 +7,7 @@ We can then utilize this to create other CI/CD-powered projects to ensure our pr
 ## How often is this updated?
 
 This repository has a cron job set to run the pipeline every week so you can ensure you will always get the latest Heroku information.
+
+## I'd love if more information was scraped!
+
+No problem, leave a ticket and I will look into it.
