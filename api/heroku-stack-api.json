@@ -1,13 +1,13 @@
 {
   "success": true,
-  "last_updated": "2022-10-30T02:28:48.708+00:00",
+  "last_updated": "2022-11-06T00:25:15.970+00:00",
   "data": [
     {
       "stack": {
         "name": "Heroku-22",
         "url": "https://devcenter.heroku.com/articles/heroku-22-stack"
       },
-      "baseTech": "Ubuntu 22.04",
+      "baseTech": "Ubuntu 22.04 LTS",
       "avalSince": { "text": "2022", "date": "2022-01-01T00:00:00.000+00:00" },
       "supportThrough": {
         "text": "April 2027",
@@ -20,7 +20,7 @@
         "name": "Heroku-20",
         "url": "https://devcenter.heroku.com/articles/heroku-20-stack"
       },
-      "baseTech": "Ubuntu 20.04",
+      "baseTech": "Ubuntu 20.04 LTS",
       "avalSince": { "text": "2020", "date": "2020-01-01T00:00:00.000+00:00" },
       "supportThrough": {
         "text": "April 2025",
@@ -33,7 +33,7 @@
         "name": "Heroku-18",
         "url": "https://devcenter.heroku.com/articles/heroku-18-stack"
       },
-      "baseTech": "Ubuntu 18.04",
+      "baseTech": "Ubuntu 18.04 LTS",
       "avalSince": { "text": "2018", "date": "2018-01-01T00:00:00.000+00:00" },
       "supportThrough": {
         "text": "April 2023",
@@ -49,7 +49,7 @@
         "name": "Heroku-16",
         "url": "https://devcenter.heroku.com/articles/heroku-16-stack"
       },
-      "baseTech": "Ubuntu 16.04",
+      "baseTech": "Ubuntu 16.04 LTS",
       "avalSince": { "text": "2017", "date": "2017-01-01T00:00:00.000+00:00" },
       "supportThrough": {
         "text": "April 2021",
