@@ -1,7 +1,20 @@
 {
   "success": true,
-  "last_updated": "2024-06-23T00:24:21.398+00:00",
+  "last_updated": "2024-06-30T00:25:00.806+00:00",
   "data": [
+    {
+      "stack": {
+        "name": "Heroku-24",
+        "url": "https://devcenter.heroku.com/articles/heroku-24-stack"
+      },
+      "baseTech": "Ubuntu 24.04 LTS",
+      "avalSince": { "text": "2024", "date": "2024-01-01T00:00:00.000+00:00" },
+      "supportThrough": {
+        "text": "April 2029",
+        "date": "2029-04-01T00:00:00.000+00:00"
+      },
+      "status": { "text": "Supported", "url": null }
+    },
     {
       "stack": {
         "name": "Heroku-22",
@@ -26,7 +39,10 @@
         "text": "April 2025",
         "date": "2025-04-01T00:00:00.000+00:00"
       },
-      "status": { "text": "Supported", "url": null }
+      "status": {
+        "text": "Deprecated",
+        "url": "https://devcenter.heroku.com/changelog-items/2895"
+      }
     },
     {
       "stack": {
