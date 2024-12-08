@@ -1,6 +1,6 @@
 {
   "success": true,
-  "last_updated": "2024-12-01T00:34:46.982+00:00",
+  "last_updated": "2024-12-08T00:31:53.891+00:00",
   "data": [
     {
       "stack": {
@@ -13,7 +13,7 @@
         "text": "April 2029",
         "date": "2029-04-01T00:00:00.000+00:00"
       },
-      "status": { "text": "Default stack", "url": null }
+      "status": { "text": "Cedar+Fir", "url": null }
     },
     {
       "stack": {
@@ -26,7 +26,7 @@
         "text": "April 2027",
         "date": "2027-04-01T00:00:00.000+00:00"
       },
-      "status": { "text": "Supported", "url": null }
+      "status": { "text": "Cedar", "url": null }
     },
     {
       "stack": {
@@ -39,10 +39,7 @@
         "text": "April 2025",
         "date": "2025-04-01T00:00:00.000+00:00"
       },
-      "status": {
-        "text": "Deprecated",
-        "url": "https://devcenter.heroku.com/changelog-items/2895"
-      }
+      "status": { "text": "Cedar", "url": null }
     },
     {
       "stack": {
@@ -55,10 +52,7 @@
         "text": "April 2023",
         "date": "2023-04-01T00:00:00.000+00:00"
       },
-      "status": {
-        "text": "End-of-life",
-        "url": "https://devcenter.heroku.com/changelog-items/2583"
-      }
+      "status": { "text": "Cedar", "url": null }
     },
     {
       "stack": {
@@ -71,10 +65,7 @@
         "text": "April 2021",
         "date": "2021-04-01T00:00:00.000+00:00"
       },
-      "status": {
-        "text": "End-of-life",
-        "url": "https://devcenter.heroku.com/changelog-items/2139"
-      }
+      "status": { "text": "Cedar", "url": null }
     },
     {
       "stack": {
@@ -84,7 +75,7 @@
       "baseTech": "Docker",
       "avalSince": { "text": "2017", "date": "2017-01-01T00:00:00.000+00:00" },
       "supportThrough": { "text": null, "date": null },
-      "status": { "text": null, "url": null }
+      "status": { "text": "Cedar", "url": null }
     }
   ]
 }
