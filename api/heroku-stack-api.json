@@ -1,7 +1,20 @@
 {
   "success": true,
-  "last_updated": "2026-05-17T01:04:34.667+00:00",
+  "last_updated": "2026-05-24T01:07:05.285+00:00",
   "data": [
+    {
+      "stack": {
+        "name": "Heroku-26",
+        "url": "https://devcenter.heroku.com/articles/heroku-26-stack"
+      },
+      "baseTech": "Ubuntu 26.04 LTS",
+      "avalSince": { "text": "2026", "date": "2026-01-01T00:00:00.000+00:00" },
+      "supportThrough": {
+        "text": "April 2031",
+        "date": "2031-04-01T00:00:00.000+00:00"
+      },
+      "status": { "text": "Cedar+Fir", "url": null }
+    },
     {
       "stack": {
         "name": "Heroku-24",
